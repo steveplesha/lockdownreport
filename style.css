@@ -28,8 +28,10 @@ ol { -webkit-padding-start: 0; }
 .center { margin: 0 auto; }
 
 .logo {
-    width: 100%;
+    display: block;
+    width: 60%;
     max-width: 330px;
+    margin: 0 auto;
 }
 
 .green { color: #3AE656; }
