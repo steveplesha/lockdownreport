@@ -30,6 +30,7 @@ ol { -webkit-padding-start: 0; }
     width: 60%;
     max-width: 200px;
     margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(25, 25, 27, 0.54);
 }
 
 .green { color: #3AE656; }
@@ -49,6 +50,8 @@ textarea {
 
 input[type="text"],
 input[type="number"] { padding: 5px; }
+
+input[type="number"] { width: 50px; }
 
 main {
     background-color: rgb(102, 0, 0);
@@ -122,6 +125,9 @@ li { list-style-type: none; }
         background: linear-gradient( #99AEFF, #0F2392 );
     }
 
-    h1 { font-size: 2.5em; }
+    h1 { 
+        font-size: 2.5em; 
+        text-shadow: 5px 3px rgb(70, 63, 63);
+    }
 
 }
