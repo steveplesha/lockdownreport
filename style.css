@@ -1,0 +1,105 @@
+html { font-family: 'Merriweather', serif; }
+
+body { background-color: rgb(39, 39, 39); }
+
+h1 { font-size: 1.5em; }
+
+h3,
+h5 { margin-bottom: 5px; }
+
+h5 { margin-top: 5px; }
+
+ul { -webkit-padding-start: 10px; }
+
+ol { -webkit-padding-start: 0; }
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+
+.group:after {
+    clear: both;
+}
+
+.center-text { text-align: center; }
+
+.center { margin: 0 auto; }
+
+.logo {
+    width: 100%;
+    max-width: 330px;
+}
+
+.green { color: #3AE656; }
+
+.yellow { color: #E7F022; }
+
+.red { color: #FF3E3E; }
+
+.uppercase { text-transform: uppercase; }
+
+input[type="text"],
+input[type="number"],
+textarea { 
+    color: #000; 
+    font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="number"] { padding: 5px; }
+
+main {
+    background-color: rgb(102, 0, 0);
+    padding-right: 1em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    color: #fff;
+}
+
+.hint-text { 
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+li { list-style-type: none; }
+
+.ss-form-question { margin-bottom: 1.875em; }
+
+.ss-q-short {
+    margin-bottom: 10px; 
+    margin-left: 10px;
+}
+
+.ss-choice-item { margin-bottom: 10px; }
+
+.ss-q-title { margin-bottom: 10px; }
+
+.ss-choice-label { font-size: .8em; }
+
+.ss-choice-label span { font-weight: bold; }
+
+.ss-q-long { width: 100%; }
+
+.submit-btn {
+    background: linear-gradient( #BBCEF5, #253694 );
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.4em;
+    width: 100%;
+}
+
+
+/*
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+*/
