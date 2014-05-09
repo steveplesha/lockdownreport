@@ -1,15 +1,57 @@
-html { font-family: 'Merriweather', serif; }
+/*  ---- Font Styling ----  */
 
-h1 { font-size: 1.5em; }
+html { font-family: 'Merriweather', serif; } /* Google Font for the site */
+
+h1 { font-size: 1.5em; /* 24px / 16px */ }
+
+.hint-text { 
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.uppercase { text-transform: uppercase; }
+
+.green { color: #3AE656; }
+
+.yellow { color: #E7F022; }
+
+.red { color: #FF3E3E; }
+
+.ss-choice-label { font-size: .8em; }
+
+.ss-choice-label span { font-weight: bold; }
+
+.ss-q-short,
+.ss-q-long {
+    color: #000;
+    font-family: sans-serif;
+}
+/****************************/
+
+
+/*  ---- Spacing ----  */
 
 h3,
-h5 { margin-bottom: 5px; }
+h5 { margin-bottom: 0.3125em; /* 5px / 16px */ }
 
-h5 { margin-top: 5px; }
+h5 { margin-top: 0.3125em; /* 5px / 16px */ }
 
-ul { -webkit-padding-start: 10px; }
+ul { -webkit-padding-start: 0.625em; /* 10px / 16px */ }
 
-ol { -webkit-padding-start: 0; }
+input[type="number"] { width: 3.125em; /* 50px / 16px */ }
+
+.ss-form-question { margin-bottom: 1.875em; /* 30px / 16px */ }
+
+.ss-choice-item,
+.ss-q-title { margin-bottom: 0.625em; /* 10px / 16px */ }
+
+.ss-choice-item-control { margin-right: 0.3125em; /* 5px / 16px */ }
+
+.ss-q-long { width: 100%; }
+/***********************/
+
+
+/*  ---- Clearfix ----  */
 
 .group:before,
 .group:after {
@@ -20,38 +62,15 @@ ol { -webkit-padding-start: 0; }
 .group:after {
     clear: both;
 }
+/************************/
+
+
+/*  ---- Layout ----  */
 
 .center-text { text-align: center; }
 
 .center { margin: 0 auto; }
-
-.logo {
-    display: block;
-    width: 60%;
-    max-width: 200px;
-    margin: 0 auto;
-    box-shadow: 5px 5px 5px rgba(25, 25, 27, 0.54);
-}
-
-.green { color: #3AE656; }
-
-.yellow { color: #E7F022; }
-
-.red { color: #FF3E3E; }
-
-.uppercase { text-transform: uppercase; }
-
-input[type="text"],
-input[type="number"],
-textarea { 
-    color: #000; 
-    font-family: sans-serif;
-}
-
-input[type="text"],
-input[type="number"] { padding: 5px; }
-
-input[type="number"] { width: 50px; }
+/**********************/
 
 main {
     background-color: rgb(102, 0, 0);
@@ -61,38 +80,28 @@ main {
     color: #fff;
 }
 
-.hint-text { 
-    font-style: italic;
-    font-size: 0.8em;
-}
-
 li { list-style-type: none; }
 
-.ss-form-question { margin-bottom: 1.875em; }
-
-.ss-q-short {
-    margin-bottom: 10px; 
-    margin-left: 10px;
+.logo {
+    display: block;
+    width: 60%;
+    max-width: 200px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(25, 25, 27, 0.54);
 }
 
-.ss-choice-item { margin-bottom: 10px; }
+.ss-q-short {
+    margin-bottom: 0.625em; /* 10px / 16px */ 
+    margin-left: 0.625em; /* 10px / 16px */
+    padding: 0.3125em; /* 5px / 16px */
+}
 
-.ss-choice-item-control { margin-right: 5px; }
-
-.ss-q-title { margin-bottom: 10px; }
-
-.ss-choice-label { font-size: .8em; }
-
-.ss-choice-label span { font-weight: bold; }
-
-.ss-q-long { width: 100%; }
-
-.submit-btn {
+#ss-submit {
     background: linear-gradient( #BBCEF5, #253694 );
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding-top: 0.625em; /* 10px / 16px */
+    padding-right: 1.25em; /* 20px / 16px */
+    padding-bottom: 0.625em; /* 10px / 16px */
+    padding-left: 1.25em; /* 20px / 16px */
     border: none;
     border-radius: 3px;
     font-weight: bold;
@@ -119,15 +128,15 @@ li { list-style-type: none; }
 
     .ss-q-long { max-width: 350px; }
 
-    .submit-btn { max-width: 200px; }
+    #ss-submit { max-width: 200px; }
 
-    .submit-btn:hover {
+    #ss-submit:hover {
         background: linear-gradient( #99AEFF, #0F2392 );
     }
 
     h1 { 
         font-size: 2.5em; 
-        text-shadow: 5px 3px rgb(70, 63, 63);
+        text-shadow: 3px 2px 2px rgb(70, 63, 63);
     }
 
 }
